@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Custom Command
+Comment=/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+Exec=/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service
+Icon=application-default-icon
+Type=Application
+X-GNOME-Autostart-enabled=true
