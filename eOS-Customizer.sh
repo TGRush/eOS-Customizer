@@ -17,9 +17,9 @@ uline="\e[4m"
 reset="\e[0m"
 
 help() {
-    echo "Elementary Customizer"
+    echo -e "${bold}Elementary Customizer${reset}"
     echo "A Script to do plenty of common customization on ElementaryOS easily"
-    echo -e "\n"
+    echo ""
     echo "Syntax:"
     echo -e "$0 --help          Show a help page"
     echo -e "$0 --eostweaks     Install Elementary Tweaks"
@@ -47,22 +47,20 @@ namarupa() {
     sed -i 's/^OnlyShowIn.*/OnlyShowIn=Unity;GNOME;Pantheon;/' ~/.config/autostart/indicator-application.desktop
     echo -e "${green}Downloading Namarupa...${reset}"
     wget "https://github.com/Lafydev/wingpanel-indicator-namarupa/raw/master/com.github.donadigo.wingpanel-indicator-namarupa_1.0.2_odin.deb" -O namarupa.deb
-    sudo apt-get install indicator-application
+    sudo apt install indicator-application -y
     sudo apt install ./namarupa.deb
-    echo -e "${green}Restarting Wingpanel...${reset}"
-    killall wingpanel
+    echo -e "${red}If the indicators don't appear, make sure ~/.config/autostart/indicator-application.desktop exists, if it does, then re-log (logout then login)${reset}"
     echo -e "${green}Done!${reset}"
-    # Note for later:
-    # Tray icons currently don't actually show up in the Applet
-    # FIX ^^^
 }
 
 ppa() {
-    echo "placeholder...to be implemented"
+    echo -e "${green}Enabling PPA support...${reset}"
+    sudo apt install -y software-properties-common
+    echo -e "${green}Done!${reset}"
 }
 
 icons() {
-    echo "placeholder...to be implemented"
+
 }
 
 if [ -n "$1" ]; then

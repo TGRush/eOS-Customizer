@@ -4,12 +4,25 @@
 
 This allows you to do a bit of customization that is commonly done on elementaryOS in an automated manner, like for example installing Namarupa for Appindicator support, installing Pantheon/Elementary Tweaks, and installing icon packs to match the elementaryOS stylesheet.
 
-### Currently included is:
+### Currently planned is:
 
 - **Namarupa** - Appindicator support
+
 - **Pantheon Tweaks** - Additional settings for the Pantheon desktop
-- **elemenatyPlus** - A supplement to the official elementaryOS icons to support more applications
+
+- **Urutau Icons** - A supplement to the official elementaryOS icons to support more applications
+
 - **enable PPAs** - This just enables PPAs again (Also applies when installing Pantheon Tweaks)
+
+### Implementation status:
+
+- [x] Namarupa
+
+- [x] Pantheon Tweaks
+
+- [ ] Urutau Icons
+
+- [x] enable PPAs
 
 ## License
 
